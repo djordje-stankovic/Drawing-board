@@ -111,6 +111,10 @@ export default {
         ];
       },
     },
+    //SideBar setings
+    sideBar: {
+      default: true,
+    },
     //Default color setings
     colorSettings: {
       type: Object,
@@ -141,7 +145,6 @@ export default {
   },
   data() {
     return {
-      sideBar: true,
       drawing: true,
       canvasListFull: false,
       eraze: false,
@@ -156,6 +159,7 @@ export default {
       canvasSetingsMerged: {},
       //Merged object for color Setings from props and default value
       colorSetingMerged: {},
+
       //Default Canvas Setings prop values
       canvasSetingsDefault: {
         width: 300,
